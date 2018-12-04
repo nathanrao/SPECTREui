@@ -8,5 +8,5 @@ import {MatTabsModule} from '@angular/material/tabs';
 })
 export class AppComponent {
   title = 'Hesburgh Library Room Occupancy';
-  subtitle = 'SPECTRE CPEG Senior Design Fall 2018'
+  subtitle = 'SPECTRE CPEG Senior Design Fall 2018';
 }
