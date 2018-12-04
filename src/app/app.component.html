@@ -11,19 +11,30 @@
 
   <mat-tab-group>
     <mat-tab label="North Reading Room">
-      <h3>Some tab content</h3>
-      <p>...</p>
+      <mat-drawer-container class="example-container">
+        <mat-drawer mode="side" opened>Current Occupancy</mat-drawer>
+        <mat-drawer-content> 12/40 <br/> 30% </mat-drawer-content>
+            <!-- will have to pull current occupany data from photograph and do a calculation-->
+      </mat-drawer-container>
     </mat-tab>
     <mat-tab label="Fishbowl">
-      <h3>Some more tab content</h3>
-      <p>...</p>
+      <mat-drawer-container class="example-container">
+        <mat-drawer mode="side" opened>Current Occupancy</mat-drawer>
+        <mat-drawer-content> 12/40 <br/> 30% </mat-drawer-content>
+            <!-- will have to pull current occupany data from photograph and do a calculation-->
+      </mat-drawer-container>
     </mat-tab>
     <mat-tab label="Technology Commons">
-      <h3>Some more tab content</h3>
-      <p>...</p>
+      <mat-drawer-container class="example-container">
+        <mat-drawer mode="side" opened>Current Occupancy</mat-drawer>
+        <mat-drawer-content> 12/40 <br/> 30% </mat-drawer-content>
+            <!-- will have to pull current occupany data from photograph and do a calculation-->
+      </mat-drawer-container>
     </mat-tab>
   </mat-tab-group>
-
+  <div id="contentframe" style="position:relative; top: -215px; left: 200px;">
+  <iframe width="600" height="400" src="https://app.powerbi.com/view?r=eyJrIjoiZWQyOWY5NTMtOTlhYS00ZjZlLWE4MTEtNTE0N2U1NDZmYTk1IiwidCI6ImZjOGE0NmMxLTdmZTMtNDMzNi05ZTIyLWNkODM2YWM3OTk2YyIsImMiOjN9" frameborder="0" allowFullScreen="true"></iframe>
+  </div>
 </div>
 
 <!--
