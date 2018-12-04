@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {MatTabsModule} from '@angular/material/tabs';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'SPECTREui';
+  title = 'Hesburgh Library Room Occupancy';
+  subtitle = 'SPECTRE CPEG Senior Design Fall 2018'
 }
