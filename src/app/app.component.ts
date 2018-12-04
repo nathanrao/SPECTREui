@@ -8,4 +8,6 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Hesburgh Library Room Occupancy';
   subtitle = 'SPECTRE CPEG Senior Design Fall 2018';
+
+
 }
