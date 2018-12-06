@@ -28,7 +28,7 @@
               "./node_modules/dygraphs/dist/dygraph.min.css"
             ],
             "scripts": [
-              "./node_module/dygraphs/dist/dygraph.min.js"
+              // "./node_module/dygraphs/dist/dygraph.min.js"
             ]
           },
           "configurations": {
