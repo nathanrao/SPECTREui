@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  baseUrl: 'https://64viw8ilo7.execute-api.us-east-2.amazonaws.com/test/mcavanag'
+  // singleUrl: 'https://64viw8ilo7.execute-api.us-east-2.amazonaws.com/test/mcavanag',
+  multiUrl: 'https://64viw8ilo7.execute-api.us-east-2.amazonaws.com/test/plot/mcavanag'
 };
 
 /*

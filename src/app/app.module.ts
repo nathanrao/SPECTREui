@@ -2,9 +2,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { MatTabsModule, MatSidenavModule } from '@angular/material';
 import { HttpClientModule } from '@angular/common/http';
-
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NgDygraphsModule} from 'ng-dygraphs';
 
 @NgModule({
   declarations: [
@@ -15,7 +15,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserAnimationsModule,
     MatTabsModule,
     MatSidenavModule,
-    HttpClientModule
+    HttpClientModule,
+    NgDygraphsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

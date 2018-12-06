@@ -13,18 +13,25 @@
     <mat-tab label="North Reading Room">
       <mat-drawer-container class="example-container">
         <mat-drawer mode="side" opened>Current Occupancy</mat-drawer>
-        <mat-drawer-content> {{numPeople}}/40 <br/> 30% </mat-drawer-content>
-            <!-- will have to pull current occupany data from photograph and do a calculation-->
+        <mat-drawer-content> {{numPeople}}/48 <br/> {{capacityPercentage}}% </mat-drawer-content>
+            <!-- will have to pull current occupancy data from photograph and do a calculation-->
       </mat-drawer-container>
       <div id="readingRoomFrame" style="position:relative; top: -215px; left: 200px;">
-        <iframe width="600" height="400" src="https://app.powerbi.com/view?r=eyJrIjoiZWQyOWY5NTMtOTlhYS00ZjZlLWE4MTEtNTE0N2U1NDZmYTk1IiwidCI6ImZjOGE0NmMxLTdmZTMtNDMzNi05ZTIyLWNkODM2YWM3OTk2YyIsImMiOjN9" frameborder="0" allowFullScreen="true"></iframe>
+        <ng-dygraphs [data]="peopleData"
+                      [options]="options">
+
+        </ng-dygraphs>
       </div>
+        <!--
+        <iframe width="600" height="400" src="https://app.powerbi.com/view?r=eyJrIjoiZWQyOWY5NTMtOTlhYS00ZjZlLWE4MTEtNTE0N2U1NDZmYTk1IiwidCI6ImZjOGE0NmMxLTdmZTMtNDMzNi05ZTIyLWNkODM2YWM3OTk2YyIsImMiOjN9" frameborder="0" allowFullScreen="true"></iframe>
+        -->
+
     </mat-tab>
     <mat-tab label="Fishbowl">
       <mat-drawer-container class="example-container">
         <mat-drawer mode="side" opened>Current Occupancy</mat-drawer>
-        <mat-drawer-content> 12/40 <br/> 30% </mat-drawer-content>
-            <!-- will have to pull current occupany data from photograph and do a calculation-->
+        <mat-drawer-content> {{numPeople}}/48 <br/> {{capacityPercentage}}% </mat-drawer-content>
+            <!-- will have to pull current occupancy data from photograph and do a calculation-->
       </mat-drawer-container>
       <div id="fishbowlFrame" style="position:relative; top: -215px; left: 200px;">
         <iframe width="600" height="400" src="https://app.powerbi.com/view?r=eyJrIjoiZWQyOWY5NTMtOTlhYS00ZjZlLWE4MTEtNTE0N2U1NDZmYTk1IiwidCI6ImZjOGE0NmMxLTdmZTMtNDMzNi05ZTIyLWNkODM2YWM3OTk2YyIsImMiOjN9" frameborder="0" allowFullScreen="true"></iframe>
@@ -33,8 +40,8 @@
     <mat-tab label="Technology Commons">
       <mat-drawer-container class="example-container">
         <mat-drawer mode="side" opened>Current Occupancy</mat-drawer>
-        <mat-drawer-content> 12/40 <br/> 30% </mat-drawer-content>
-            <!-- will have to pull current occupany data from photograph and do a calculation-->
+        <mat-drawer-content> {{numPeople}}/48 <br/> {{capacityPercentage}}% </mat-drawer-content>
+            <!-- will have to pull current occupancy data from photograph and do a calculation-->
       </mat-drawer-container>
       <div id="techcommonsFrame" style="position:relative; top: -215px; left: 200px;">
         <iframe width="600" height="400" src="https://app.powerbi.com/view?r=eyJrIjoiZWQyOWY5NTMtOTlhYS00ZjZlLWE4MTEtNTE0N2U1NDZmYTk1IiwidCI6ImZjOGE0NmMxLTdmZTMtNDMzNi05ZTIyLWNkODM2YWM3OTk2YyIsImMiOjN9" frameborder="0" allowFullScreen="true"></iframe>

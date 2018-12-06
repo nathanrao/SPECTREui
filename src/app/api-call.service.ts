@@ -10,7 +10,7 @@ export class ApiCallService {
   constructor( private http: HttpClient) {}
 
   get(): Observable<Object> {
-    const url = `${environment.baseUrl}`;
+    const url = `${environment.multiUrl}`;
     return this.http.get<Object>(url);
   }
 }

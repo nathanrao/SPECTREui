@@ -5,7 +5,7 @@
 # * 'ptr' and 'ptrp' create a POST request with a simple or parameter-like body;
 # * 'mptr' and 'fptr' create a POST request to submit a form with a text or file field (multipart/form-data);
 
-GET https://64viw8ilo7.execute-api.us-east-2.amazonaws.com/test/mcavanag
+GET https://64viw8ilo7.execute-api.us-east-2.amazonaws.com/test/plot/mcavanag
 Accept: application/json
 
 ###
