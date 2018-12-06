@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { ApiCall } from './api-call';
+import { ApiCallService} from './api-call.service';
 import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
-import * as _ from 'lodash';
 import { Title } from '@angular/platform-browser';
 
 @Component({
@@ -13,14 +12,16 @@ import { Title } from '@angular/platform-browser';
 export class AppComponent implements OnInit {
   title = 'Hesburgh Library Room Occupancy';
   subtitle = 'SPECTRE CPEG Senior Design Fall 2018';
+  numPeople = 0;
 
-  constructor(private titleService: Title,  ApiCall: service) {
-    this.ApiCall = ApiCall;
-  }
+  constructor(private titleService: Title,  private service: ApiCallService) {}
 
   ngOnInit() {
     this.titleService.setTitle('Hesburgh Library Room Occupancy');
-    service.get();
+    this.service.get().subscribe(x => {
+      this.numPeople = x['Items'][0]['numpeople']['N'];
+      console.log(x);
+    });
   }
 
 
